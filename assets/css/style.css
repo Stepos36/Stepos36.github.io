@@ -37,6 +37,7 @@ nav {
     color: #FFFFFF;
     float:left;
     margin-left:23.31%;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 #menu-links {
     font-size: 25px;
@@ -62,7 +63,7 @@ a:hover {
     color: #666666;
 }
 h1 {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 h2 { 
     font-family: 'Georgia', Times, "Times New Roman", serif;
@@ -73,15 +74,7 @@ h2 {
 h3 {
     color:#777777;
     font-size: 20px;
-}
-#menu-links {
-
-}
-.this-page {
-
-}
-.link {
-
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 #portfolio-image {
     width: 200px;
@@ -97,12 +90,6 @@ h3 {
 .placeholder {
     width: 300px;
     height:225px;
-}
-placeholder:hover {
-    width: 300px;
-    height:225px;
-    border: #666666 2px solid;
-    padding:2px;
 }
 .push {
     height: 50px;
@@ -142,12 +129,21 @@ footer {
     margin-bottom: 3%;
     text-align: center;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 400;
     position:relative;
     border: #dddddd 2px solid;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color:#FFFFFF
 }
 .link3:hover {
     border: #666666 2px solid;
+    font-weight: 500;
+    color: #777777
+}
+.link3:active {
+    border: #000000 2px solid;
+    font-weight: 500;
+    color: #4aaaa5
 }
 .clear {
     clear:both
@@ -189,7 +185,6 @@ footer {
     border: none;
     color: #FFFFFF;
     font-size: 20px
-
 }
 .project-name {
     position: absolute;
@@ -198,5 +193,4 @@ footer {
     background-color: #4aaaa5;
     padding: 20px;
     bottom: 10px;
-    color:#FFFFFF
 }
