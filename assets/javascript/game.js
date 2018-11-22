@@ -1,32 +1,32 @@
 //Random word gets picked from an existing array 
 var words = [   {   wordSign: 'LOST(2004-2010)',
                     wordName: 'LOST',
-                    wordPicture: 'assets/images/',
+                    wordPicture: 'assets/images/lost.jpg',
                     wordMusic: '',
                 },
-                {   wordSign: 'Dexter(2006-2013',
+                {   wordSign: 'Dexter(2006-2013)',
                     wordName: 'Dexter',
-                    wordPicture: 'assets/images/',
+                    wordPicture: 'assets/images/dexter.jpg',
                     wordMusic: '',
                 },
                 {   wordSign: 'Breaking Bad(2008-2013)',
                     wordName: 'Breaking_bad',
-                    wordPicture: 'assets/images/',
+                    wordPicture: 'assets/images/bb.jpg',
                     wordMusic: '',
                 },
                 {   wordSign: 'Big bang theory(2007-present)',
                     wordName: 'Big_bang_theory',
-                    wordPicture: 'assets/images/',
+                    wordPicture: 'assets/images/bbt.jpg',
                     wordMusic: '',
                 },
-                {   wordSign: 'Scrubs(2001-2010',
+                {   wordSign: 'Scrubs(2001-2010)',
                     wordName: 'Scrubs',
-                    wordPicture: 'assets/images/',
+                    wordPicture: 'assets/images/scrubs.jpg',
                     wordMusic: '',
                 },
                 {   wordSign: 'Westworld(2016-present)',
                     wordName: 'Westworld',
-                    wordPicture: 'assets/images/',
+                    wordPicture: 'assets/images/ww.jpg',
                     wordMusic: '',
                 },
                 {   wordSign: 'Game of thrones(2011-present)',
@@ -34,22 +34,29 @@ var words = [   {   wordSign: 'LOST(2004-2010)',
                     wordPicture: 'assets/images/got.jpg',
                     wordMusic: '',
                 },
-                {   wordSign: 'Sons of anarchy(2008-2014',
+                {   wordSign: 'Sons of anarchy(2008-2014)',
                     wordName: 'Sons_of_anarchy',
-                    wordPicture: 'assets/images/',
+                    wordPicture: 'assets/images/soa.jpg',
                     wordMusic: '',
                 },
                 {   wordSign: 'Friends(1994-2004)',
                     wordName: 'Friends',
-                    wordPicture: 'assets/images/',
+                    wordPicture: 'assets/images/friends.jpg',
                     wordMusic: '',
                 },
                 {   wordSign: 'American Horror Story(2011-present)',
                     wordName: 'American_Horror_Story',
-                    wordPicture: 'assets/images/',
+                    wordPicture: 'assets/images/ahs.jpg',
                     wordMusic: '',
                 },
             ]
+var standbyPic ='assets/images/standby.jpg'
+var losePic = 'assets/images/lose.jpg'
+
+var loseSign = 'You lost! Press RESTART to start again' 
+
+var test = 'assets/audio/got.mp3'
+
 var randNum;
 var unknownWord;
 var chosenWord;
@@ -58,18 +65,18 @@ var rightWord = [];
 var wrongWord = [];
 var remainingLetters;
 var remainingGuesses;
+
 var objUnderScore = document.getElementsByClassName("underscore");
 var objWrongWord = document.getElementsByClassName("wrongletters");
 var objGuessesLeft = document.getElementsByClassName("guessesleft");
 var objWins = document.getElementsByClassName("wins");
-var objImage = document.getElementsByClassName("show")
+var objImage = document.getElementsByClassName("show-image-1")
 var objNext = document.getElementsByClassName("nextword")
+var objSign = document.getElementsByClassName("sign-show-name")
 
 var wins = 0;
 
 newGame();
-document.getElementsByClassName('show').src = "assets/images/got.jpg"
-console.log(objImage.src)
 
 //Pick up the key user pressed
 document.addEventListener('keypress', function(event) {
@@ -101,27 +108,33 @@ document.addEventListener('keypress', function(event) {
        objGuessesLeft[0].innerHTML = remainingGuesses;
        if (remainingGuesses === 0) {
             alert("You Lost! Try again! The word was: " + chosenWord.toUpperCase());
+            image(losePic)
+            sign(loseSign)
             objNext[0].innerHTML = ('Restart') 
-            objNext[0].addEventListener("click", function nextLevel() {
-            newGame()
-            objUnderScore[0].innerHTML = underScore.join(' ');
-            objGuessesLeft[0].innerHTML = remainingGuesses;
-            objWrongWord[0].innerHTML = ('none');
-            objWins[0].innerHTML = ('---');
             wins = 0
-            }) ;
-       }
+            objWins[0].innerHTML = wins
+            objNext[0].addEventListener("click", function nextLevelLose() {
+                newGame()
+                image(standbyPic)
+                sign('')
+                objUnderScore[0].innerHTML = underScore.join(' ');
+                objGuessesLeft[0].innerHTML = remainingGuesses;
+                objWrongWord[0].innerHTML = ('none');
+                objNext[0].innerHTML = ('');
+    })
     }
+    };
     if (underScore.join('') === chosenWord) {
        alert("You won!");
        wins++;
-       console.log(objImage.src)
-       image(unknownWord.wordPicture)
-       console.log(objImage.src)
        objWins[0].innerHTML = wins; 
+       image(unknownWord.wordPicture);
+       sign(unknownWord.wordSign);
        objNext[0].innerHTML = ('Next word!'); 
-       objNext[0].addEventListener("click", function nextLevel() {
+       objNext[0].addEventListener("click", function nextLevelWin() {
             newGame();
+            image(standbyPic);
+            sign('')
             objUnderScore[0].innerHTML = underScore.join(' ');
             objGuessesLeft[0].innerHTML = remainingGuesses;
             objWrongWord[0].innerHTML = ('none');
@@ -152,8 +165,8 @@ function newGame() {
     generateUnderscores()
 }
 function image(picPath) {
-    objImage.src = picPath;
+    objImage[0].src = picPath;
 }
-
-
-
+function sign(signPath) {
+    objSign[0].innerHTML = signPath;
+}
