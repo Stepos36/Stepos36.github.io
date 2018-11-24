@@ -1,4 +1,4 @@
-//Random word gets picked from an existing array 
+//An array of objects with necessary properties 
 var words = [   {   wordSign: 'LOST(2004-2010)',
                     wordName: 'LOST',
                     wordPicture: 'assets/images/lost.jpg',
@@ -49,13 +49,32 @@ var words = [   {   wordSign: 'LOST(2004-2010)',
                     wordPicture: 'assets/images/ahs.jpg',
                     wordMusic: '',
                 },
-            ]
+                {   wordSign: 'The Walking Dead(2010-present)',
+                    wordName: 'The_Walking_Dead',
+                    wordPicture: 'assets/images/twd.jpg',
+                    wordMusic: '',
+                },
+                {   wordSign: 'House of cards(2013-2018)',
+                    wordName: 'House_of_cards',
+                    wordPicture: 'assets/images/hoc.jpg',
+                    wordMusic: '',
+                },
+                {   wordSign: 'Supernatural(2005-present)',
+                    wordName: 'Supernarural',
+                    wordPicture: 'assets/images/sn.jpg',
+                    wordMusic: '',
+                },
+                {   wordSign: 'Stranger Things(2016-present)',
+                    wordName: 'Stranger_things',
+                    wordPicture: 'assets/images/st.jpg',
+                    wordMusic: '',
+                },
+            ]            
 var standbyPic ='assets/images/standby.jpg'
 var losePic = 'assets/images/lose.jpg'
 
 var loseSign = 'You lost! Press RESTART to start again' 
-
-var test = 'assets/audio/got.mp3'
+var winSign = 'You won! Press NEXT WORD to continue'
 
 var randNum;
 var unknownWord;
@@ -66,6 +85,7 @@ var wrongWord = [];
 var remainingLetters;
 var remainingGuesses;
 
+//DOM variables that refer JavaScript to html objects via class names
 var objUnderScore = document.getElementsByClassName("underscore");
 var objWrongWord = document.getElementsByClassName("wrongletters");
 var objGuessesLeft = document.getElementsByClassName("guessesleft");
@@ -80,7 +100,8 @@ newGame();
 
 //Pick up the key user pressed
 document.addEventListener('keypress', function(event) {
-    var keyWord = event.key;
+    var keyLetter = event.key;
+    var keyWord = keyLetter.toLowerCase()
     console.log(keyWord)
  //Compare the key user pressed with the word we have
     for (var j=0; j<chosenWord.length;j++) {
@@ -98,9 +119,11 @@ document.addEventListener('keypress', function(event) {
     if (wrongWord.includes(keyWord)) {
         alert('You already guessed that!')
     }
+    //If the same right letter is guessed do nothing
     else if (underScore.includes(keyWord)) {
     }
-    //If entered letter is wrong - it goes to the wrongWord array and we lose an attempt
+    //If entered letter is wrong - it goes to the wrongWord array and we lose an attempt. Stats update, 'You lose' picture appears and 
+    //the 'Restart' button appears
     else {
        wrongWord.push(keyWord);
        remainingGuesses--;
@@ -124,12 +147,13 @@ document.addEventListener('keypress', function(event) {
     })
     }
     };
+    //If all letters of the right word are correctly guessed, tv show picture appears, stats update and 'Next Word' button appear
     if (underScore.join('') === chosenWord) {
        alert("You won!");
        wins++;
        objWins[0].innerHTML = wins; 
        image(unknownWord.wordPicture);
-       sign(unknownWord.wordSign);
+       sign(unknownWord.wordSign +'<br/>'+ winSign);
        objNext[0].innerHTML = ('Next word!'); 
        objNext[0].addEventListener("click", function nextLevelWin() {
             newGame();
@@ -142,10 +166,6 @@ document.addEventListener('keypress', function(event) {
     })
     }
  }) 
-
-
-//Add the wrong letter to the wrong letter section
-
 function newGame() {
     randNum = Math.floor(Math.random() * words.length);
     unknownWord = words[randNum];
