@@ -10,3 +10,6 @@
 .diamond:active {
     filter: brightness(2) drop-shadow(5px 5px 5px #222);
 }
+.card-text {
+    font-size: 50px
+}
