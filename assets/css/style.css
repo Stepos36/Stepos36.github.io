@@ -1,0 +1,336 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.navbar {
+    background-color: #B4D0FF;
+    padding: 0.3% 0;
+    font-size: 1,2em
+}
+.navbar-brand {
+    position: absolute;
+    min-height: 55px;
+    padding: 0 15px 10px;
+    margin-bottom:-10px;
+    margin-top:10px;
+}
+.navbar-list {
+    text-align: center
+}
+#home {
+    background: url(../images/bg-1.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width:100%;
+    background-size:cover;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+}
+.landing-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle
+}
+.landing-text h1 {
+    font-size: 500%;
+    font-weight: 700
+}
+.padding {
+    padding: 80px 0;
+}
+.padding img{
+    width:100%
+}
+.fixed {
+    background: url(../images/bg-2.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width:100%;
+    background-size:cover;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+}
+.floatIn {
+  font-weight: 700;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  padding: 10px;
+  color: #3B3D42
+}
+
+.floatIn .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(59,61,66, 0.8);
+    background-clip: border-box;
+    border: solid 2px rgba(59,61,66, 0.5);
+    border-radius: 10px;
+    color: white
+}
+.project-card {
+  height: 25rem;
+  width: 18rem;
+  margin: 20px 10px 24px 10px;
+  padding: 1rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.project-card:hover {
+    color: rgb(196,255,248)
+}
+.icon-images {
+    text-align: center
+}
+.icon-image {
+    max-width: 135px;
+    margin-top:8px
+}
+.floating-icons {
+    position: relative;
+}
+.contact-info h4 {
+    font-size:18px
+}
+.contacts-header {
+    width: 100%
+}
+.fa-icons a:hover {
+    text-decoration: none
+}
+.html5 {
+    position: absolute;
+    left:325px
+}
+.css3 {
+    position: absolute;
+    left:325px
+}
+.bootstrap {
+    position: absolute;
+    left:325px
+}
+.javascript {
+    position: absolute;
+    left:325px
+}
+.node {
+    position: absolute;
+    left:325px
+}
+.express {
+    position: absolute;
+    left:325px
+}
+.mongo {
+    position: absolute;
+    left:325px
+}
+.lead {
+    padding: 15px
+}
+@media only screen and (max-width: 1198px) {
+    .html5 {
+        position: absolute;
+        left:250px
+    }
+    .css3 {
+        position: absolute;
+        left:250px
+    }
+    .bootstrap {
+        position: absolute;
+        left:250px
+    }
+    .javascript {
+        position: absolute;
+        left:250px
+    }
+    .node {
+        position: absolute;
+        left:250px
+    }
+    .express {
+        position: absolute;
+        left:250px
+    }
+    .mongo {
+        position: absolute;
+        left:250px
+    }
+}
+@media only screen and (max-width: 992px) {
+    .icon-images {
+        display: none;
+    }
+    .html5 {
+        position: absolute;
+        left:180px
+    }
+    .css3 {
+        position: absolute;
+        left:180px
+    }
+    .bootstrap {
+        position: absolute;
+        left:180px
+    }
+    .javascript {
+        position: absolute;
+        left:180px
+    }
+    .node {
+        position: absolute;
+        left:180px
+    }
+    .express {
+        position: absolute;
+        left:180px
+    }
+    .mongo {
+        position: absolute;
+        left:180px
+    }
+    .about-me .lead {
+        font-size: 15px
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .icon-images {
+        display: none;
+    }
+    .html5 {
+        position: absolute;
+        left:200px
+    }
+    .css3 {
+        position: absolute;
+        left:200px
+    }
+    .bootstrap {
+        position: absolute;
+        left:200px
+    }
+    .javascript {
+        position: absolute;
+        left:200px
+    }
+    .node {
+        position: absolute;
+        left:200px
+    }
+    .express {
+        position: absolute;
+        left:200px
+    }
+    .mongo {
+        position: absolute;
+        left:200px
+    }
+    .about-me .lead {
+        font-size: 15px
+    }
+    .floatIn {
+        font-weight: 400;
+        font-size: 2.8em;
+    }
+}
+@media only screen and (max-width: 571px) {
+    .icon-images {
+        display: none;
+    }
+    .html5 {
+        position: absolute;
+        left:160px
+    }
+    .css3 {
+        position: absolute;
+        left:160px
+    }
+    .bootstrap {
+        position: absolute;
+        left:160px
+    }
+    .javascript {
+        position: absolute;
+        left:160px
+    }
+    .node {
+        position: absolute;
+        left:160px
+    }
+    .express {
+        position: absolute;
+        left:160px
+    }
+    .mongo {
+        position: absolute;
+        left:160px
+    }
+    .about-me .lead {
+        font-size: 15px
+    }
+    .floatIn {
+        font-weight: 300;
+        font-size: 1.8em;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .icon-images {
+        display: none;
+    }
+    .html5 {
+        position: absolute;
+        left:42%
+    }
+    .css3 {
+        position: absolute;
+        left:42%
+    }
+    .bootstrap {
+        position: absolute;
+        left:42%
+    }
+    .javascript {
+        position: absolute;
+        left:42%
+    }
+    .node {
+        position: absolute;
+        left:42%
+    }
+    .express {
+        position: absolute;
+        left:42%
+    }
+    .mongo {
+        position: absolute;
+        left:42%
+    }
+    .about-me .lead {
+        font-size: 15px
+    }
+    .floatIn {
+        font-weight: 600;
+        font-size: 1.6em;
+    }
+}
+.fa-icons {
+    text-align: center
+}
+@media only screen and (max-width: 425px) {
+    #home, #fixed {
+        background-attachment:scroll;
+    }
+}
