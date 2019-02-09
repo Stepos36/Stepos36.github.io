@@ -2,10 +2,17 @@ html, body {
     height: 100%;
     width: 100%;
 }
+button:focus {
+    outline: none
+}
+.massive {
+    font-weight: 400 !important
+}
 .navbar {
-    background-color: #B4D0FF;
+    background-color: black;
     padding: 0.3% 0;
-    font-size: 1,2em
+    font-size: 1,2em;
+    min-height: 70px
 }
 .navbar-brand {
     position: absolute;
@@ -17,8 +24,20 @@ html, body {
 .navbar-list {
     text-align: center
 }
+.nav-link {
+    color:white !important;
+    font-size:20px;
+    margin-right:30px;
+}
+.nav-link:hover {
+    color: rgb(196,255,248) !important
+}
+.navbar-toggler-icon {
+    color:white !important;
+    background-image: url(../images/toggler.png) !important
+}
 #home {
-    background: url(../images/bg-1.jpg) no-repeat center center fixed;
+    background: url(../images/bg-1.png) no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -247,6 +266,9 @@ html, body {
     }
 }
 @media only screen and (max-width: 571px) {
+    #home {
+        background: url(../images/bg-1-1.png) no-repeat center center fixed;
+    }
     .icon-images {
         display: none;
     }
@@ -325,12 +347,10 @@ html, body {
         font-weight: 600;
         font-size: 1.6em;
     }
-}
-.fa-icons {
-    text-align: center
-}
-@media only screen and (max-width: 425px) {
     #home, #fixed {
         background-attachment:scroll;
     }
+}
+.fa-icons {
+    text-align: center
 }
