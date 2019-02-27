@@ -137,7 +137,7 @@ function createPortfolioCard(name, imgSrc, desc) {
             hH = $('.projects').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
-        if ((wS < (hT+hH-wH+350))&&(wS > (hT+hH-wH-700))){
+        if ((wS < (hT+hH-wH+350))&&(wS > (hT+hH-wH-1000))){
                var results = anime({
                    targets:'.project-card',
                    opacity: [1],
@@ -203,7 +203,7 @@ function createPortfolioCard(name, imgSrc, desc) {
             hH = $('.projects').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
-        if ((wS < (hT+hH-wH+200))&&(wS > (hT+hH-wH-2050))){
+        if ((wS < (hT+hH-wH+200))&&(wS > (hT+hH-wH-3300))){
                var results = anime({
                    targets:'.project-card',
                    opacity: [1],
