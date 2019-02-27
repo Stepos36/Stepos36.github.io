@@ -85,6 +85,12 @@ button:focus {
   display: inline-block;
   line-height: 1em;
 }
+.floating-icons { 
+    margin-top:100px
+}
+.floating-icon {
+    max-width:75px
+}
 .card {
     position: relative;
     display: flex;
@@ -115,147 +121,26 @@ button:focus {
     max-width: 135px;
     margin-top:8px
 }
-.floating-icons {
-    position: relative;
-}
-.contact-info h4 {
-    font-size:18px
-}
-.contacts-header {
-    width: 100%
-}
-.fa-icons a:hover {
-    text-decoration: none
-}
-.html5 {
-    position: absolute;
-    left:325px
-}
-.css3 {
-    position: absolute;
-    left:325px
-}
-.bootstrap {
-    position: absolute;
-    left:325px
-}
-.javascript {
-    position: absolute;
-    left:325px
-}
-.node {
-    position: absolute;
-    left:325px
-}
-.express {
-    position: absolute;
-    left:325px
-}
-.mongo {
-    position: absolute;
-    left:325px
-}
 .lead {
     padding: 15px
-}
-@media only screen and (max-width: 1198px) {
-    .html5 {
-        position: absolute;
-        left:250px
-    }
-    .css3 {
-        position: absolute;
-        left:250px
-    }
-    .bootstrap {
-        position: absolute;
-        left:250px
-    }
-    .javascript {
-        position: absolute;
-        left:250px
-    }
-    .node {
-        position: absolute;
-        left:250px
-    }
-    .express {
-        position: absolute;
-        left:250px
-    }
-    .mongo {
-        position: absolute;
-        left:250px
-    }
 }
 @media only screen and (max-width: 992px) {
     .icon-images {
         display: none;
     }
-    .html5 {
-        position: absolute;
-        left:180px
-    }
-    .css3 {
-        position: absolute;
-        left:180px
-    }
-    .bootstrap {
-        position: absolute;
-        left:180px
-    }
-    .javascript {
-        position: absolute;
-        left:180px
-    }
-    .node {
-        position: absolute;
-        left:180px
-    }
-    .express {
-        position: absolute;
-        left:180px
-    }
-    .mongo {
-        position: absolute;
-        left:180px
-    }
     .about-me .lead {
         font-size: 15px
     }
-
+    .floating-icons { 
+        margin-top:75px
+    }
+    .floating-icon {
+        max-width:60px
+    }
 }
 @media only screen and (max-width: 768px) {
     .icon-images {
         display: none;
-    }
-    .html5 {
-        position: absolute;
-        left:200px
-    }
-    .css3 {
-        position: absolute;
-        left:200px
-    }
-    .bootstrap {
-        position: absolute;
-        left:200px
-    }
-    .javascript {
-        position: absolute;
-        left:200px
-    }
-    .node {
-        position: absolute;
-        left:200px
-    }
-    .express {
-        position: absolute;
-        left:200px
-    }
-    .mongo {
-        position: absolute;
-        left:200px
     }
     .about-me .lead {
         font-size: 15px
@@ -263,6 +148,12 @@ button:focus {
     .floatIn {
         font-weight: 400;
         font-size: 2.8em;
+    }
+    .floating-icons { 
+        margin-top:65px
+    }
+    .floating-icon {
+        max-width:45px
     }
 }
 @media only screen and (max-width: 571px) {

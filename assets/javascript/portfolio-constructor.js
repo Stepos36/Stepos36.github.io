@@ -15,10 +15,20 @@ var projects = [    {   name: 'Spice It Up' ,
                         description: 'A basic Hangman Game to check your TV shows knowledge',
                         link: 'http://stepos36.github.io/Word-Guess-Game'
                     },
+                    {   name: 'Friend finder' ,
+                        image: 'assets/images/projects/friend-finder/icon.png',
+                        description: "A compatibility-based 'FriendFinder' application - basically a dating app. This full-stack site takes in results from users' surveys, then compares their answers with those from other users. Then this app displays the name and picture of the user with the best overall match.",
+                        link: 'http://friend-finder-36.herokuapp.com'
+                    },
                     {   name: 'LIRI node application' ,
                         image: 'assets/images/projects/liri-node-app/liri.png',
                         description: "LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.",
                         link: 'https://github.com/Stepos36/liri-node-app'
+                    },
+                    {   name: 'Bamazon' ,
+                        image: 'assets/images/projects/bamazon/icon.png',
+                        description: "Bamazon is an Amazon-like SQL based app that has 2 possible user interfaces: Bamazon customer and Bamazon manager Bamazon customer allows user to view items available in the store and shop available items Bamazon manager allows user to manage this store: view items, view low inventory, restock items and add new items to the store.",
+                        link: 'https://github.com/Stepos36/Bamazon'
                     },
                     {   name: 'Trivia Game' ,
                         image: 'assets/images/projects/trivia/trivia.png',
@@ -29,8 +39,13 @@ var projects = [    {   name: 'Spice It Up' ,
                         image: 'assets/images/projects/rps/icon.png',
                         description: 'Classic rock-paper-scissors multiplayer game. Enjoy playing it with your friends!',
                         link: 'http://stepos36.github.io/RPS-Multiplayer'
+                    },
+                    {   name: 'Burger-Logger' ,
+                        image: 'assets/images/projects/burger/icon.png',
+                        description: 'A burger logger app with MySQL, Node, Express, Handlebars and a homemade ORM (yum!)',
+                        link: 'http://buburger.herokuapp.com'
                     }
-            ]
+            ];
 function createPortfolioCard(name, imgSrc, desc) {
     var cardDiv = $('<div>', { 
       class: 'card project-card',
