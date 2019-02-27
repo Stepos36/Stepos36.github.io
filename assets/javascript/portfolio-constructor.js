@@ -27,7 +27,7 @@ var projects = [    {   name: 'Spice It Up' ,
                     },
                     {   name: 'Bamazon' ,
                         image: 'assets/images/projects/bamazon/icon.png',
-                        description: "Bamazon is an Amazon-like SQL based app that has 2 possible user interfaces: Bamazon customer and Bamazon manager Bamazon customer allows user to view items available in the store and shop available items Bamazon manager allows user to manage this store: view items, view low inventory, restock items and add new items to the store.",
+                        description: "Bamazon is an Amazon-like SQL based app that has 2 possible user interfaces: Bamazon customer and Bamazon manager",
                         link: 'https://github.com/Stepos36/Bamazon'
                     },
                     {   name: 'Trivia Game' ,
