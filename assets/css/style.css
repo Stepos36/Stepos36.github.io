@@ -124,6 +124,9 @@ button:focus {
 .lead {
     padding: 15px
 }
+.contacts-header {
+    width: 100%
+}
 @media only screen and (max-width: 992px) {
     .icon-images {
         display: none;
@@ -244,4 +247,7 @@ button:focus {
 }
 .fa-icons {
     text-align: center
+}
+.fa:hover {
+    text-decoration: none
 }
