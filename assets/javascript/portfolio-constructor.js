@@ -10,6 +10,11 @@ var projects = [    {   name: 'Spice It Up' ,
                         description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
                         link: 'http://stepos36.github.io/Spice-It'
                     },
+                    {   name: 'Pizza Lovers Point-of-sales system' ,
+                        image: 'assets/images/projects/pizza/pizza.png',
+                        description: 'A fully functioning Point-Of-Sales system for a Pizzeria that allows you to experience the typical salesperson workflow. Use password "1234" to access reports page',
+                        link: 'https://obscure-beach-56866.herokuapp.com'
+                    },
                     {   name: 'Hangman game' ,
                         image: 'assets/images/projects/word-guess-game/bg-shows.png',
                         description: 'A basic Hangman Game to check your TV shows knowledge',
@@ -39,11 +44,6 @@ var projects = [    {   name: 'Spice It Up' ,
                         image: 'assets/images/projects/rps/icon.png',
                         description: 'Classic rock-paper-scissors multiplayer game. Enjoy playing it with your friends!',
                         link: 'http://stepos36.github.io/RPS-Multiplayer'
-                    },
-                    {   name: 'Burger-Logger' ,
-                        image: 'assets/images/projects/burger/icon.png',
-                        description: 'A burger logger app with MySQL, Node, Express, Handlebars and a homemade ORM (yum!)',
-                        link: 'http://buburger.herokuapp.com'
                     }
             ];
 function createPortfolioCard(name, imgSrc, desc) {
