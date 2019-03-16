@@ -58,6 +58,17 @@ button:focus {
 .padding {
     padding: 80px 0;
 }
+#about-me, .lists {
+    background: url(../images/bg-3.jpg) no-repeat center center fixed;
+    background-size:cover;
+}
+#contacts, .lists, #about-me, #projects {
+    border-top: groove rgb(154,154,154) 5px
+}
+#contacts {
+    background: url(../images/bg-4.jpg);
+    background-size:cover;
+}
 .padding img{
     width:100%
 }
