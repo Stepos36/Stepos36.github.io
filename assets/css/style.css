@@ -72,9 +72,10 @@ button:focus {
 }
 #articles {
     margin-top:1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 #articles a {
+    margin-top: 15px;
     color: rgb(33,37,41)
 }
 #infoshow {
