@@ -83,7 +83,7 @@
         <div class="floatIn">My</div>
         <div class="floatIn">projects</div>
     </div>
-
+    
     <div class="padding lists">
         <div class="container">
             <div class="row">
@@ -126,6 +126,24 @@
         </div>
     </div>
 
+    <div class="padding articles">
+        <div class="container">
+            <h3 class="text-center" id="myFav">My favourite articles</h3>
+            <div class="row">
+                <button class="btn btn-dark" id="infoshow">Show</button>
+            </div>
+            <div class="row"> 
+                    <p id="articles">
+                        <a target='_blank' href="https://www.entrepreneur.com/article/289248">◭ #3 Reasons Why Everyone Should Learn Programming</a></br>
+                        <a target='_blank' href="https://blog.codinghorror.com/we-are-typists-first-programmers-second/">◮ We Are Typists First, Programmers Second</a></br>
+                        <a target='_blank' href="https://www.businessinsider.com/apple-ceo-tim-cook-why-college-degree-isnt-necessary-2019-3">◭ Apple CEO Tim Cook explains why you don't need a college degree to be successful</a></br>
+                        <a target='_blank' href="https://www.inc.com/jessica-stillman/why-elon-musk-doesnt-care-about-college-degrees.html">◮ Elon Musk to the Young and Ambitious: Skills Matter More Than Degrees</a></br>
+                        <a target='_blank' href="https://waitbutwhy.com/2013/09/why-generation-y-yuppies-are-unhappy.html">◭ Why Generation Y Yuppies Are Unhappy</a></br>
+                    </p>
+            </div>
+        </div>
+    </div>        
+
     <div class="padding" id="contacts">
         <div class="container contact-info">
             <div class="row">
@@ -151,5 +169,11 @@
             </div>
         </div>
     </div>
+    <script>
+    $("#articles").hide()
+    $('#infoshow').on('click', function() {
+        $("#articles").slideToggle()
+    })
+    </script>
 </body>
 </html>

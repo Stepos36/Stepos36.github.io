@@ -65,6 +65,25 @@ button:focus {
 #contacts, .lists, #about-me, #projects {
     border-top: groove rgb(154,154,154) 5px
 }
+.articles {
+    background: url(../images/books.png) no-repeat center center fixed;
+    background-size:cover;
+    border-top: groove rgb(154,154,154) 5px
+}
+#articles {
+    margin-top:1rem;
+    font-size: 1.5rem;
+}
+#articles a {
+    color: rgb(33,37,41)
+}
+#infoshow {
+    margin: 0 auto;
+    display: block;
+}
+#myFav {
+    margin-bottom:2rem
+}
 #contacts {
     background: url(../images/bg-4.jpg);
     background-size:cover;
