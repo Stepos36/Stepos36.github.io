@@ -18,7 +18,7 @@ var projects = [    {   name: 'Spice It Up' ,
                     {   name: 'RL Scraper' ,
                         image: 'assets/images/projects/rferl/rferl.png',
                         description: 'A web application that lets users view and leave comments on the latest news from RadioLiberty news website',
-                        link: 'http://stepos36.github.io/rferl.herokuapp.com'
+                        link: 'http://rferl.herokuapp.com'
                     },
                     {   name: 'Friend finder' ,
                         image: 'assets/images/projects/friend-finder/icon.png',
