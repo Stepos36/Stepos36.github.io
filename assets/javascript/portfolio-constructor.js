@@ -10,22 +10,22 @@ var projects = [    {   name: 'Spice It Up' ,
                         description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
                         link: 'http://stepos36.github.io/Spice-It'
                     },
-                    {   name: 'Pizza Lovers Point-of-sales system' ,
+                    {   name: 'Pizza Lovers' ,
                         image: 'assets/images/projects/pizza/pizza.png',
-                        description: 'A fully functioning Point-Of-Sales system for a Pizzeria that allows you to experience the typical salesperson workflow. Use password "1234" to access reports page',
+                        description: 'A Point-Of-Sales system for a Pizzeria that allows you to experience the typical pizza place work flow. Use password "1234" to access manager dashboard',
                         link: 'https://obscure-beach-56866.herokuapp.com'
                     },
-                    {   name: 'Hangman game' ,
-                        image: 'assets/images/projects/word-guess-game/bg-shows.png',
-                        description: 'A basic Hangman Game to check your TV shows knowledge',
-                        link: 'http://stepos36.github.io/Word-Guess-Game'
+                    {   name: 'RL Scraper' ,
+                        image: 'assets/images/projects/rferl/rferl.png',
+                        description: 'A web application that lets users view and leave comments on the latest news from RadioLiberty news website',
+                        link: 'http://stepos36.github.io/rferl.herokuapp.com'
                     },
                     {   name: 'Friend finder' ,
                         image: 'assets/images/projects/friend-finder/icon.png',
                         description: "A compatibility-based 'FriendFinder' application - basically a dating app. This full-stack site takes in results from users' surveys, then compares their answers with those from other users. Then this app displays the name and picture of the user with the best overall match.",
                         link: 'http://friend-finder-36.herokuapp.com'
                     },
-                    {   name: 'LIRI node application' ,
+                    {   name: 'LIRI' ,
                         image: 'assets/images/projects/liri-node-app/liri.png',
                         description: "LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.",
                         link: 'https://github.com/Stepos36/liri-node-app'
@@ -40,7 +40,7 @@ var projects = [    {   name: 'Spice It Up' ,
                         description: 'In this game you get to pick one of 4 different themes and test your knowledge on Cars, TV shows, History or Games.',
                         link: 'http://stepos36.github.io/TriviaGame'
                     },
-                    {   name: 'Rock-Paper-Scissors game' ,
+                    {   name: 'RPS-online' ,
                         image: 'assets/images/projects/rps/icon.png',
                         description: 'Classic rock-paper-scissors multiplayer game. Enjoy playing it with your friends!',
                         link: 'http://stepos36.github.io/RPS-Multiplayer'
