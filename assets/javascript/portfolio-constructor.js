@@ -20,15 +20,15 @@ var projects = [    {   name: 'Spice It Up' ,
                         description: 'A web application that lets users view and leave comments on the latest news from RadioLiberty news website',
                         link: 'http://rferl.herokuapp.com'
                     },
+                    {   name: 'React Clicky' ,
+                        image: 'assets/images/projects/clicky/icon.png',
+                        description: "React Based Click Game designed to improve your memory!",
+                        link: 'https://nelasov.me/react-clicky-game/'
+                    },
                     {   name: 'Friend finder' ,
                         image: 'assets/images/projects/friend-finder/icon.png',
                         description: "A compatibility-based 'FriendFinder' application - basically a dating app. This full-stack site takes in results from users' surveys, then compares their answers with those from other users. Then this app displays the name and picture of the user with the best overall match.",
                         link: 'http://friend-finder-36.herokuapp.com'
-                    },
-                    {   name: 'LIRI' ,
-                        image: 'assets/images/projects/liri-node-app/liri.png',
-                        description: "LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.",
-                        link: 'https://github.com/Stepos36/liri-node-app'
                     },
                     {   name: 'Bamazon' ,
                         image: 'assets/images/projects/bamazon/icon.png',
