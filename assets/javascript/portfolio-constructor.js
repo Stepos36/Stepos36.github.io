@@ -20,8 +20,8 @@ var projects = [    {   name: 'Spice It Up' ,
                         description: 'A web application that lets users view and leave comments on the latest news from RadioLiberty news website',
                         link: 'http://rferl.herokuapp.com'
                     },
-                    {   name: 'React Clicky' ,
-                        image: 'assets/images/projects/clicky/icon.png',
+                    {   name: 'React Clicker' ,
+                        image: 'assets/images/projects/clicky/favicon.png',
                         description: "React Based Click Game designed to improve your memory!",
                         link: 'https://nelasov.me/react-clicky-game/'
                     },
