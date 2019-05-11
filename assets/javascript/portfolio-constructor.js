@@ -30,10 +30,10 @@ var projects = [    {   name: 'Spice It Up' ,
                         description: "A compatibility-based 'FriendFinder' application - basically a dating app. This full-stack site takes in results from users' surveys, then compares their answers with those from other users. Then this app displays the name and picture of the user with the best overall match.",
                         link: 'http://friend-finder-36.herokuapp.com'
                     },
-                    {   name: 'Bamazon' ,
-                        image: 'assets/images/projects/bamazon/icon.png',
-                        description: "Bamazon is an Amazon-like SQL based app that has 2 possible user interfaces: Bamazon customer and Bamazon manager",
-                        link: 'https://github.com/Stepos36/Bamazon'
+                    {   name: 'Wall-IT' ,
+                        image: 'assets/images/projects/wall-it/logo.png',
+                        description: "One stop shop for your personal finances and stock trades",
+                        link: 'https://sheltered-mesa-24365.herokuapp.com/'
                     },
                     {   name: 'Trivia Game' ,
                         image: 'assets/images/projects/trivia/trivia.png',
